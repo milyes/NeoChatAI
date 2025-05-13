@@ -1,38 +1,16 @@
-# NeoChat AI
 
-NeoChat AI est une application de messagerie en temps réel basée sur **FastAPI** et **Vue.js**, avec support WebSocket et architecture prête pour l'intégration IA.
+# NetSecurePro - Streamlit W&B Viewer
 
-## Fonctionnalités
-- Messagerie en temps réel via WebSocket
-- Frontend moderne avec Vue 3 + TailwindCSS
-- Architecture prête pour :
-  - Authentification utilisateur
-  - Multi-salons
-  - Base de données (SQLite, PostgreSQL)
-  - Intégration GPT / IA de réponse automatique
+Cette application permet de visualiser les derniers logs de projets IA connectés à [Weights & Biases](https://wandb.ai/gfbleu-netsecurepro-/NetSecurePro) pour l'organisation `gfbleu-netsecurepro-`.
 
-## Démarrage rapide
+## Lancer l'application en ligne
 
-### Backend (FastAPI)
+1. Fork ce dépôt sur ton compte GitHub.
+2. Va sur [streamlit.io/cloud](https://streamlit.io/cloud) et connecte ton GitHub.
+3. Choisis ce dépôt et clique sur **"Deploy"**.
 
-```bash
-cd backend
-pip install fastapi uvicorn
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
+L'application affichera les 5 derniers runs de ton projet NetSecurePro sur W&B.
 
-### Frontend (Vue 3)
+## Fichier principal
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-L’application est ensuite accessible sur :
-- Frontend : `http://localhost:5173`
-- Backend : `http://localhost:8000`
-- WebSocket : `ws://localhost:8000/ws/chat`
-
-## Auteur
-Mohammed Ilyes — Projet NeoChatAI sous licence MIT.
+- `streamlit_app.py` : code principal de l'interface Streamlit
